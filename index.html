@@ -8,57 +8,82 @@
     </head>
     <body>
         <main>
-            <head>
+            <header>
                 <h1>Voting in America</h1>
                 <article>
                     <h2>Did you know...</h2>
                     <p>...that if there was a candidate that was accounted for "no-show" votes back in 2016, that candidate would've won over both Donald Trump and Hillary Clinton?</p>
                     <p>Below are some other interesting facts about voting in the US</p>
                 </article>
-            </head>
+            </header>
             
-            <!-- Link to fact1: "https://www.citylab.com/life/2018/11/voter-turnout-midterm-election-statistics-map/574939/"" -->
+            <!-- Info boxes -->
             <section id="facts">
                 <section id="fact1">
                     <p id="info1" class="infoBox">The New York Politic's Data Center told the <span id="newYorkTimes">New York Times</span>...</p>
-                    <div id="box1" class="boxes">
-                        <p>...more than 80% of college-educated Americans turn out to vote compared to 40% that do not hold high school degrees</p>
+                    <div class="flip">
+                        <div class="front">
+                            <div class="boxes">
+                                <p class="center">Click for Info</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div id="box1" class="boxes">
+                                <p>...more than 80% of college-educated Americans turn out to vote compared to 40% that do not hold high school degrees</p>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
-                <!-- Link to fact2: "https://www.fairvote.org/voter_turnout#voter_turnout_101" -->
                 <section if="fact2">
                     <p id="info2" class="infoBox">In recent times...</p>
-                    <div id="box2" class="boxes">
-                        <p>...60% of eligible voters vote in presidential election years while 40% vote during the midterm elections</p>
+                    <div class="flip">
+                        <div class="front">
+                            <div class="boxes">
+                                <p class="center">Click for Info</p>
+                            </div>
+                        </div>
+                        <div class="back">    
+                            <div id="box2" class="boxes">
+                                <p>...60% of eligible voters vote in presidential election years while 40% vote during the midterm elections</p>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 
-                <!-- Link to fact3: "https://www.bustle.com/articles/192672-how-many-millennials-voted-in-the-2016-election-hillary-clinton-donald-trump-fought-for-their" -->
                 <section>
                     <p id="info3" class="infoBox">Although 24 million Millenials voted in 2016's election...</p>
-                    <div id="box3" class="boxes">
-                        <p>...it's projected less compared to 2012's elections.</p>
+                    <div class="flip">
+                        <div class="front">
+                            <div class="boxes">
+                                <p class="center">Click for Info</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div id="box3" class="boxes">
+                                <p>...it's projected less compared to 2012's elections.</p>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </section>
             <footer>
                 <p>Credit to appropriate sources</p>
+                <section>
                 <a href="https://www.citylab.com/life/2018/11/voter-turnout-midterm-election-statistics-map/574939/">www.citylab.com</a>
                 <a href="https://www.fairvote.org/voter_turnout#voter_turnout_101">www.fairvote.org</a>
                 <a href="https://www.bustle.com/articles/192672-how-many-millennials-voted-in-the-2016-election-hillary-clinton-donald-trump-fought-for-their">www.bustle.com</a></p>
+                </section>
             </footer>
         </main>
     </body>
     
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 
-  <script>
-  $(function() {
-      $('')
-  });
-  </script>
+    <script>
+        $().ready(function() {
+            $(".flip").flip();
+        });
+    </script>
 </html>
